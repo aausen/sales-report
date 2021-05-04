@@ -1,5 +1,5 @@
 """Generate sales report showing total melons each salesperson sold."""
-
+# This would be helpful if it was all within a functions to increase re-useability
 # Create new lists for salespeople and melons sold
 salespeople = []
 melons_sold = []
@@ -11,6 +11,9 @@ for line in f:
     line = line.rstrip()
     entries = line.split('|')
 
+#It would be best to create a new dictionary we could add each name and count to. 
+# It would be faster to look it up and less likely someone would accidentally 
+# screw up the parallel lists
 # Assigns the entries to new variables to use later in the code
     salesperson = entries[0]
     # makes melon an integer so we can work with it
